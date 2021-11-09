@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+.font-nanum {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.font-white {
+  color: rgb(255, 255, 255);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.router-wrap {
+  display: flex;
+  flex-flow: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+// fade animation
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+
+// slide-fade animation
+.slide-fade-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+// slide-up-fade animation
+.slide-up-fade-enter {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.slide-up-fade-enter-active,
+.slide-up-fade-leave-active {
+  transition: all 0.5s ease;
+}
+.slide-up-fade-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
